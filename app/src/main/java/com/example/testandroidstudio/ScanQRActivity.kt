@@ -27,6 +27,8 @@ class ScanQRActivity : AppCompatActivity() {
     private lateinit var cameraProviderFuture: ListenableFuture<ProcessCameraProvider>
     private lateinit var cameraExecutor: ExecutorService
     private lateinit var barcodeScanner: BarcodeScanner
+    private var isScanning = false
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -99,6 +101,12 @@ class ScanQRActivity : AppCompatActivity() {
 
     @OptIn(ExperimentalGetImage::class)
     private fun processImageProxy(scanner: BarcodeScanner, imageProxy: ImageProxy) {
+        // Jangan lanjutkan scanning jika sudah mendeteksi QR code
+        if (isScanning) {
+            imageProxy.close()
+            return
+        }
+
         val mediaImage = imageProxy.image
         if (mediaImage != null) {
             val image = InputImage.fromMediaImage(mediaImage, imageProxy.imageInfo.rotationDegrees)
@@ -108,8 +116,17 @@ class ScanQRActivity : AppCompatActivity() {
                         for (barcode in barcodes) {
                             val qrCodeValue = barcode.rawValue
                             Log.d("ScanQRActivity", "QR Code detected: $qrCodeValue")
-                            Toast.makeText(this, "QR Code detected: $qrCodeValue", Toast.LENGTH_SHORT).show()
-                            // Handle QR code value (e.g., navigate to another activity)
+
+                            // Set isScanning to true to prevent further processing
+                            isScanning = true
+
+                            // Kirim hasil QR ke activity baru
+                            val intent = Intent(this, QRResultActivity::class.java)
+                            intent.putExtra("QR_RESULT", qrCodeValue)
+                            startActivity(intent)
+
+                            // Setelah memproses satu QR code, tidak perlu memproses yang lain
+                            break
                         }
                     } else {
                         Log.d("ScanQRActivity", "No QR Code detected")
@@ -126,6 +143,8 @@ class ScanQRActivity : AppCompatActivity() {
             imageProxy.close() // Close the image even if it's null to avoid memory leaks
         }
     }
+
+
 
     private fun allPermissionsGranted(): Boolean {
         return ContextCompat.checkSelfPermission(

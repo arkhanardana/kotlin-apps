@@ -49,6 +49,8 @@
         <activity android:name=".PetaActivity"
             android:exported="true"/>
         <activity android:name=".AdiwiyataActivity"/>
+        <activity android:name=".QRResultActivity"/>
+
 
     </application>
 </manifest>

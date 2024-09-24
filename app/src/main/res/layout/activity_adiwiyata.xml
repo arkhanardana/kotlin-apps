@@ -11,42 +11,34 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Halaman Adiwiyata"
-        android:textSize="24sp"
+        android:layout_marginTop="284dp"
+        android:text="Klik tombol di bawah untuk seputar Adiwiyata"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOpenWebsite"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonOpenWebsite"
         android:layout_width="120dp"
         android:layout_height="55dp"
+        android:layout_marginTop="20dp"
         android:text="Click"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintHorizontal_bias="0.5"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-124dp">
-
-        <Button
-            android:id="@+id/buttonGoBack"
-            android:layout_width="120dp"
-            android:layout_height="55dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="Go Back" />
-
-    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:text="Go Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
