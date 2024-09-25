@@ -15,9 +15,11 @@ appcompat = "1.7.0"
 material = "1.12.0"
 junitKtx = "1.2.1"
 osmdroidAndroid = "6.1.10"
+playServicesLocationVersion = "21.0.1"
 zxingAndroidEmbedded = "4.3.0"
 supportAnnotations = "28.0.0"
 annotation = "1.8.2"
+playServicesLocation = "21.3.0"
 
 [libraries]
 androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraView" }
@@ -35,9 +37,11 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
 osmdroid-android = { module = "org.osmdroid:osmdroid-android", version.ref = "osmdroidAndroid" }
 osmdroid-bonuspack = { module = "org.osmdroid:osmdroid-bonuspack", version.ref = "osmdroidAndroid" }
+play-services-location-v2101 = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocationVersion" }
 zxing-android-embedded = { module = "com.journeyapps:zxing-android-embedded", version.ref = "zxingAndroidEmbedded" }
 support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
 androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

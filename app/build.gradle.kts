@@ -47,6 +47,8 @@ dependencies {
     implementation (libs.androidx.camera.view)
     implementation (libs.zxing.android.embedded)
     implementation (libs.core)
+    implementation (libs.play.services.location.v2101)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
