@@ -16,6 +16,6 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java) // Corrected intent syntax
             startActivity(intent)
             finish() // Menutup SplashActivity agar tidak bisa kembali ke splash screen
-        }, 5000) // 5000ms = 5 detik
+        }, 3000) // 5000ms = 5 detik
     }
 }

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- NestedScrollView to allow scrolling -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonGoBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Judul Utama -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="10 Rekomendasi Kuliner Jogja"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Kuliner 1 (Sate Klathak) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/sateKlathakTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sate Klathak"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/sateKlathakImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/sateKlathakDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sate Klathak adalah sate khas Yogyakarta yang terbuat dari daging kambing dengan bumbu rempah."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 2 (Gudeg) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/gudegTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gudeg"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/gudegImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/gudegDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gudeg adalah masakan khas Yogyakarta yang terbuat dari nangka muda dengan santan dan rempah-rempah."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 3 (Bakpia) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/bakpiaTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bakpia"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/bakpiaImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/bakpiaDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bakpia adalah kue khas Yogyakarta yang terbuat dari tepung terigu dan berisi kacang hijau manis."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 4 (Nasi Goreng Kambing) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/nasiGorengKambingTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Goreng Kambing"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/nasiGorengKambingImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/nasiGorengKambingDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Goreng Kambing adalah nasi goreng yang dimasak dengan daging kambing dan bumbu khas."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 5 (Ayam Geprek) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/ayamGeprekTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ayam Geprek"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/ayamGeprekImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/ayamGeprekDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ayam Geprek adalah ayam goreng yang dihaluskan dan dicampur dengan sambal pedas."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 6 (Jadah Tempe) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/jadahTempeTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jadah Tempe"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/jadahTempeImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/jadahTempeDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jadah Tempe adalah makanan khas Yogyakarta yang terbuat dari ketan dan tempe."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 7 (Klepon) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/kleponTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Klepon"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/kleponImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/kleponDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Klepon adalah kue tradisional berbentuk bulat yang diisi gula merah."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 8 (Es dawet) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/esDawetTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Es Dawet"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/esDawetImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/esDawetDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Es Dawet adalah minuman segar yang terbuat dari tepung beras, gula merah, dan santan."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 9 (Tongseng) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tongsengTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tongseng"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/tongsengImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/tongsengDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tongseng adalah masakan berbahan dasar daging, biasanya kambing, yang dimasak dengan bumbu rempah dan santan."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Kuliner 10 (Cendol) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/cendolTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cendol"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/cendolImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <TextView
+                    android:id="@+id/cendolDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cendol adalah minuman manis dengan tepung beras, santan, dan gula merah, sangat cocok untuk cuaca panas."
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Tombol Kembali -->
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="12dp"
+        android:textColor="@android:color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>
