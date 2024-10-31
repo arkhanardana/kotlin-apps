@@ -56,7 +56,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/sate" />
 
                 <TextView
                     android:id="@+id/sateKlathakDescriptionTextView"
@@ -90,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/gudeg" />
 
                 <TextView
                     android:id="@+id/gudegDescriptionTextView"
@@ -124,7 +124,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/bakpia" />
 
                 <TextView
                     android:id="@+id/bakpiaDescriptionTextView"
@@ -158,7 +158,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/gorengnasi" />
 
                 <TextView
                     android:id="@+id/nasiGorengKambingDescriptionTextView"
@@ -192,7 +192,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/geprek" />
 
                 <TextView
                     android:id="@+id/ayamGeprekDescriptionTextView"
@@ -226,7 +226,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/jadah" />
 
                 <TextView
                     android:id="@+id/jadahTempeDescriptionTextView"
@@ -260,7 +260,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/klepon" />
 
                 <TextView
                     android:id="@+id/kleponDescriptionTextView"
@@ -294,7 +294,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/dawet" />
 
                 <TextView
                     android:id="@+id/esDawetDescriptionTextView"
@@ -328,7 +328,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/tongseng"/>
 
                 <TextView
                     android:id="@+id/tongsengDescriptionTextView"
@@ -362,7 +362,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/cendol" />
 
                 <TextView
                     android:id="@+id/cendolDescriptionTextView"
@@ -380,12 +380,13 @@
     <!-- Tombol Kembali -->
     <Button
         android:id="@+id/buttonGoBack"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Kembali"
+        android:text="Go Back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        android:textColor="@android:color/white" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

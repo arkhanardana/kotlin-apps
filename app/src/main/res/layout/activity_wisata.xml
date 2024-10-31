@@ -226,7 +226,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/merapi" />
 
                 <TextView
                     android:id="@+id/merapiDescriptionTextView"
@@ -260,7 +260,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/indrayanti" />
 
                 <TextView
                     android:id="@+id/indrayantiDescriptionTextView"
@@ -294,7 +294,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/jmblg" />
 
                 <TextView
                     android:id="@+id/jomblangDescriptionTextView"
@@ -328,7 +328,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/kali" />
 
                 <TextView
                     android:id="@+id/kalibiruDescriptionTextView"
@@ -362,7 +362,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg" />
+                    android:src="@drawable/bukit" />
 
                 <TextView
                     android:id="@+id/bukitbintangDescriptionTextView"
